@@ -1,0 +1,299 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg1{
+    width: 100%;
+    background: url('../img/042.jpg');
+    background-size: cover;
+    height: 650px;
+}
+
+.bg2{
+    width: 100%;
+    background: url('../img/top_bg.jpg');
+    background-size: cover;
+    height: 200px;
+}
+
+.bg3{
+    width: 100%;
+    background: url('../img/personagens.jpg');
+    background-size: cover;
+    height: 200px;
+}
+.bg4{
+    width: 100%;
+    background: url('../img/mapa.jpg');
+    background-size: cover;
+    height: 200px;
+}
+
+.bgSobre{
+    width: 100%;
+    background: black;
+     height: 200px;
+}
+
+nav{
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.733);
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+}
+
+nav > ul > li{
+    list-style: none;
+    display: inline;
+    padding: 20px;
+}
+
+nav a{
+    color: #faa120;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover{
+    color: white;
+}
+
+main{
+    margin: 0px;
+}
+
+.filtro{
+    list-style: none;
+    text-align: center;
+    background: black;
+    padding: 20px;
+    margin-top: 0;
+    
+}
+
+.filtro li{
+    color: #faa120;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline;
+    padding: 20px;
+}
+
+.filtro a{
+    text-decoration: none;
+    color: white;
+}
+
+.filtro a:hover{
+    color: orange;
+}
+ 
+.blocobg1{
+    border:solid 0px;
+    width: 100%;
+    height: auto;
+    display: list-item;
+    margin: 0px;
+    padding: 0px;
+}
+
+.bloco{
+    border: 0;
+    box-shadow: 3px 8px 18px #888888;
+    width: 30%;
+    height: auto;
+    display: inline-table;
+    margin: 10px;
+    padding: 10px;
+}
+.bloco span{
+    font-size: 7pt;
+}
+
+progress{
+    height: 8px;
+}
+
+.bloco img{
+    width: 100%;
+    transition: width 2s;
+}
+
+.bloco img:hover{
+    width: 110%;
+}
+
+.imgGrande{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+    margin: 0px;
+    
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 7%;
+    width: 100%;
+  }
+  
+   .conteudo {
+    position: fixed;
+    text-align:center;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: orange;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+.direita{
+    float: right;
+    width: 50%;
+}
+
+.person{
+    width: 80px;
+    display: inline-table;
+    margin: 8px;
+    cursor: pointer;
+}
+
+#nome {
+    color: rgba(221, 58, 8, 0.973);
+}
+#descricao{
+    color: rgba(6, 9, 12, 0.973);
+}
+#habilidade{
+   color: rgba(6, 9, 12, 0.973)
+}
+
+.menuCelular{
+    display: none;
+}
+
+.noticia{
+    display: inline-block;
+    width: 100%;
+    margin-left: 14px;
+}
+
+.noticia a{
+    background: orange;
+     color: white;
+    padding: 10px;
+    text-decoration: none;
+    transition: color 1s;
+}
+
+.noticia a:hover{
+    color: red;
+ }
+
+.noticia  img{
+    width: 300px;
+    max-width: none;
+    height: auto;
+    max-height: none;
+    transition: width 1s;
+}
+
+.noticia img:hover{
+    width: 350px;
+}
+
+iframe{
+    width: 100%;
+    margin: 0;
+}
+
+@media screen and (max-width: 450px) {
+
+    .menuCelular{
+        position: absolute;
+        z-index: 9999;
+        display: block;
+         margin-left: 12px;
+         margin-top: 7px;
+    }
+
+
+    nav > ul > li{
+        list-style: none;
+        display: block;
+        padding: 20px;
+    }
+
+    nav{
+        top: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.733);
+        padding: 5px;
+        text-align: left;
+        position: fixed;
+        display: none;
+    }
+
+    .noticia{
+        display: inline-block;
+        width: 100%;
+        margin: 0px;
+        padding: 5px;
+    }
+    
+    .noticia  img{
+        width: 100%;
+        max-width: none;
+        height: auto;
+        max-height: none;
+    }
+
+    iframe{
+        width: 100% !important;
+        height: 300px !important;
+    }
+
+    .direita{
+        margin-left: 3px;
+        float: left;
+        width: 80%;
+    }
+
+    #nome, #descricao, #habilidade {
+        color: white;
+    }
+
+    .filtro li{
+        display: block;
+        padding: 10px;
+        text-align: left;
+        width: 100%;
+        background: orange;
+        border-bottom: solid 2px white;
+     }
+
+    .filtro a{
+        background: orange;
+        color: white;
+        text-decoration: none;
+        margin-left: 0;
+        padding: 5px;
+        
+    }
+
+    .filtro{
+        margin-left: 0 ;
+        padding: 0;
+    }
+  
+}
+
+ 
+ 

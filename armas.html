@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <title>Free Fire</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!--chamada jquery apontando para a biblioteca-->
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <!--menu responsivo -->
+    <div class="menuCelular">
+        <img onclick="menu()" src="img/bala_branca.png" width="40">
+    </div>
+    <header class="bg2">
+        <center><br><img src="img/logo.png" width="250" /></center>
+
+    </header>
+
+    <nav>
+        <!--menu-->
+        <ul>
+            <li><a href="index.html">Início </a></li>
+            <li><a href="armas.html">Armas </a></li>
+            <li><a href="personagens.html">Personagens </a></li>
+            <li><a href="mapas.html">Mapas </a></li>
+            <li><a href="sobre.html">Sobre </a></li>
+        </ul>
+    </nav>
+
+    <main>
+             <ul class="filtro">
+                <!--filtro-->
+                <li><a href="#" onclick="filtrar('pistola')">Pistolas </a></li>
+                <!--onclik ira redirecionar para a função no js-->
+                <li><a href="#" onclick="filtrar('corpoacorpo')">Corpo a Corpo </a></li>
+                <li><a href="#" onclick="filtrar('longo_alcance')">Longo Alcance </a></li>
+                <li><a href="#" onclick="filtrar('rifle')">Rifles</a></li>
+                <li><a href="#" onclick="filtrar('submetralhadora')">SubMetralhadora</a></li>
+                <li><a href="#" onclick="filtrar('escopeta')">Escopeta</a></li>
+            </ul>
+ 
+        <div class="bloco" tipo="longo_alcance">
+            <!-- cada div funciona como um bloco para as armas-->
+            <h3>AN94</h3>
+            <!--titulo arma-->
+            <img src="img/AN94.png" />
+            <!--buscando imagem para lista dentro da div-->
+            <br>
+            <table>
+                <!--foi criado um table para usar propriedades de uma tabela para  colocar os valores especificos-->
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="59" max="100"></progress></td>
+                    <td><progress value="53" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="59" max="100"></progress></td>
+                    <td><progress value="53" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                AN94, uma AR com alto recuo porem alto poder de fogo. Efetiva a Longo alcance efetivo e boa velocidade
+                de disparo.
+            </p>
+        </div>
+
+        <div class="bloco" tipo="longo_alcance">
+            <h3>Ak</h3>
+            <img src="img/AK.png" />
+            <br>
+            <table>
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="59" max="100"></progress></td>
+                    <td><progress value="53" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="59" max="100"></progress></td>
+                    <td><progress value="53" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                Dano alto porém requer habilidade para controlar o recuo..
+            </p>
+        </div>
+
+        <div class="bloco" tipo="longo_alcance">
+            <h3>Famas</h3>
+            <img src="img/famas.png" />
+            <br>
+            <table>
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="59" max="100"></progress></td>
+                    <td><progress value="53" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="59" max="100"></progress></td>
+                    <td><progress value="53" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                A FAMAS dispara 3 balas de cada vez e é muito mortal a médio e longo alcance.
+            </p>
+        </div>
+
+        <div class="bloco" tipo="longo_alcance">
+            <h3>M4a1</h3>
+            <img src="img/M4A1.png" />
+            <br>
+            <table>
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="59" max="100"></progress></td>
+                    <td><progress value="53" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="59" max="100"></progress></td>
+                    <td><progress value="53" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                Um rifle bem equilibrado que é adequado em todas as situações de combate.
+            </p>
+        </div>
+
+        <div class="bloco" tipo="longo_alcance">
+            <h3>M14</h3>
+            <img src="img/M14.png" />
+            <br>
+            <table>
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="59" max="100"></progress></td>
+                    <td><progress value="53" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="59" max="100"></progress></td>
+                    <td><progress value="53" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                Um rifle com o maior alcance, quase como um sniper rifle.
+            </p>
+        </div>
+
+        <div class="bloco" tipo="longo_alcance">
+            <h3>M60</h3>
+            <img src="img/M60.png" />
+            <br>
+            <table>
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="59" max="100"></progress></td>
+                    <td><progress value="53" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="59" max="100"></progress></td>
+                    <td><progress value="53" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                Metralhadora leve padrão. Vem com bastante munição e tiros estaveis a médio alcance..
+            </p>
+        </div>
+
+        <div class="bloco" tipo="longo_alcance">
+            <h3>Scar</h3>
+            <img src="img/SCAR.png" />
+            <br>
+            <table>
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="59" max="100"></progress></td>
+                    <td><progress value="53" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="59" max="100"></progress></td>
+                    <td><progress value="53" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                Um rifle estável e bem equilibrado que é ótimo para os iniciantes usarem.
+            </p>
+        </div>
+
+
+        <div class="bloco" tipo="longo_alcance">
+            <h3>Xm8</h3>
+            <img src="img/XM8.png" />
+            <br>
+            <table>
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="59" max="100"></progress></td>
+                    <td><progress value="53" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="59" max="100"></progress></td>
+                    <td><progress value="53" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                Vem com uma mira 2x anexado é estável para abater inimigos na distância media..
+            </p>
+        </div>
+
+        <div class="bloco" tipo="longo_alcance">
+            <h3>M249</h3>
+            <img src="img/M249.png" />
+            <br>
+            <table>
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="59" max="100"></progress></td>
+                    <td><progress value="53" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="59" max="100"></progress></td>
+                    <td><progress value="53" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                AN94, uma AR com alto recuo porem alto poder de fogo. Efetiva a Longo alcance efetivo e boa velocidade
+                de disparo.
+            </p>
+        </div>
+
+        <div class="bloco" tipo="longo_alcance">
+            <h3>Groza</h3>
+            <img src="img/GROZA.png" />
+            <br>
+            <table>
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="59" max="100"></progress></td>
+                    <td><progress value="53" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="59" max="100"></progress></td>
+                    <td><progress value="53" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                Rifle de dano alto e de longo alcance com boa estabilidade. Talvez seja o melhor rifle do Free Fire.
+            </p>
+        </div>
+
+        <div class="bloco" tipo="pistola">
+            <h3>M500</h3>
+            <img src="img/M500.png" />
+            <br>
+            <table>
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="67" max="100"></progress></td>
+                    <td><progress value="43" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="79" max="100"></progress></td>
+                    <td><progress value="10" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                Vem com uma mira 2x pré-anexado, destinado a destruir inimigos de um longo alcance. Pistola de fogo com
+                um pequeno tamanho de clipe..
+            </p>
+        </div>
+
+        <div class="bloco" tipo="pistola">
+            <h3>USP</h3>
+            <img src="img/USP.png" />
+            <br>
+            <table>
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="45" max="100"></progress></td>
+                    <td><progress value="44" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="29" max="100"></progress></td>
+                    <td><progress value="57" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                Pistola leve que não afeta a agilidade de jogadores em combate.
+            </p>
+        </div>
+
+        <div class="bloco" tipo="pistola">
+            <h3>DESERT EAGLE</h3>
+            <img src="img/EAGLE.png" />
+            <br>
+            <table>
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="53" max="100"></progress></td>
+                    <td><progress value="37" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="46" max="100"></progress></td>
+                    <td><progress value="57" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                Pistola de disparo lento com grande poder de fogo, mesmo em distância longa.
+            </p>
+        </div>
+
+        <div class="bloco" tipo="pistola">
+            <h3>G18</h3>
+            <img src="img/G18.png" />
+            <br>
+            <table>
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="45" max="100"></progress></td>
+                    <td><progress value="64" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="36" max="100"></progress></td>
+                    <td><progress value="57" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                Pistola com pente grande, mas com pouco poder. Ótimo para disparos de curto alcance.
+            </p>
+        </div>
+
+        <div class="bloco" tipo="escopeta">
+            <h3>M1873</h3>
+            <img src="img/M1873.png" />
+            <br>
+            <table>
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="94" max="100"></progress></td>
+                    <td><progress value="35" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="8" max="100"></progress></td>
+                    <td><progress value="10" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                A única arma secundária com a qual você pode rapidamente acabar com oponentes.
+            </p>
+        </div>
+
+        <div class="bloco" tipo="pistola">
+            <h3>PISTOLA DE TRATAMENTO</h3>
+            <img src="img/HealingGun.png" />
+            <br>
+            <table>
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="59" max="100"></progress></td>
+                    <td><progress value="53" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="59" max="100"></progress></td>
+                    <td><progress value="53" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                A Arma de Tratamento causa dano contra inimigos e cura seus aliados.
+            </p>
+        </div>
+
+        <div class="bloco" tipo="submetralhadora">
+            <h3>CG15</h3>
+            <img src="img/CG15.png" />
+            <br>
+            <table>
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="99" max="100"></progress></td>
+                    <td><progress value="69" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="71" max="100"></progress></td>
+                    <td><progress value="60" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                Uma Sub-metralhadora feita com uma tecnologia do futuro. Carregar a CG15 fará com que o seu próximo tiro
+                de maior dano.
+            </p>
+        </div>
+
+        <div class="bloco" tipo="submetralhadora">
+            <h3>MP40</h3>
+            <img src="img/MP40.png" />
+            <br>
+            <table>
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="48" max="100"></progress></td>
+                    <td><progress value="83" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="22" max="100"></progress></td>
+                    <td><progress value="17" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                É incrível como esta submetralhadora é estável apesar da sua insana taxa de tiro. Extremamente poderosa
+                a curto alcance. No entanto esta arma é incapaz de equipar quaisquer anexos que não seja munição.
+            </p>
+        </div>
+
+        <div class="bloco" tipo="submetralhadora">
+            <h3>MP5</h3>
+            <img src="img/MP5.png" />
+            <br>
+            <table>
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="48" max="100"></progress></td>
+                    <td><progress value="69" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="27" max="100"></progress></td>
+                    <td><progress value="53" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                Há outras submetralhadoras com mesma estabilidade, mas perdem sua eficácia em tiros de distância longa.
+            </p>
+        </div>
+
+        <div class="bloco" tipo="submetralhadora">
+            <h3>UMP</h3>
+            <img src="img/UMPSG.png" />
+            <br>
+            <table>
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="48" max="100"></progress></td>
+                    <td><progress value="75" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="31" max="100"></progress></td>
+                    <td><progress value="24" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                A submetralhadora estável é perfeita para os iniciantes.
+            </p>
+        </div>
+
+        <div class="bloco" tipo="submetralhadora">
+            <h3>P90</h3>
+            <img src="img/p90.png" />
+            <br>
+            <table>
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="48" max="100"></progress></td>
+                    <td><progress value="75" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="27" max="100"></progress></td>
+                    <td><progress value="37" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                SMG com pente de munição grande. Vem com alta taxa de tiro e alto dano a médio alcance.
+            </p>
+        </div>
+
+        <div class="bloco" tipo="escopeta">
+            <h3>SPAS12</h3>
+            <img src="img/SPAS12.png" />
+            <br>
+            <table>
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="97" max="100"></progress></td>
+                    <td><progress value="42" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="15" max="100"></progress></td>
+                    <td><progress value="10" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                Espingarda de curto alcance muito poderosa. Você provavelmente será pesadamente punido se errar, devido
+                ao fato de que é uma arma de apenas um tiro.
+            </p>
+        </div>
+
+        <div class="bloco" tipo="escopeta">
+            <h3>M1014</h3>
+            <img src="img/M1014.png" />
+            <br>
+            <table>
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="94" max="100"></progress></td>
+                    <td><progress value="38" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="10" max="100"></progress></td>
+                    <td><progress value="10" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                Use a espingarda para dizimar rapidamente os oponentes ao redor.
+            </p>
+        </div>
+
+        <div class="bloco" tipo="rifle">
+            <h3>KAR98K</h3>
+            <img src="img/Kar98k.png" />
+            <br>
+            <table>
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="84" max="100"></progress></td>
+                    <td><progress value="27" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="84" max="100"></progress></td>
+                    <td><progress value="90" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                Um sniper rifle bem balanceado e pré-equipado com mira 4x.
+            </p>
+        </div>
+
+        <div class="bloco" tipo="rifle">
+            <h3>AWM</h3>
+            <img src="img/AWM.png" />
+            <br>
+            <table>
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="96" max="100"></progress></td>
+                    <td><progress value="27" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="92" max="100"></progress></td>
+                    <td><progress value="90" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                Rifle de sniper de dano alto com um longo tempo de recarregamento.
+            </p>
+        </div>
+
+        <div class="bloco" tipo="rifle">
+            <h3>SVD</h3>
+            <img src="img/SVD.png" />
+            <br>
+            <table>
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="89" max="100"></progress></td>
+                    <td><progress value="35" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="80" max="100"></progress></td>
+                    <td><progress value="68" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                Dragunov é um rifle sniper muito preciso e poderoso que só aparece em pontos de reabastecimento e
+                airdrops.
+            </p>
+        </div>
+
+        <div class="bloco" tipo="rifle">
+            <h3>SKS</h3>
+            <img src="img/SKS.png" />
+            <br>
+            <table>
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="82" max="100"></progress></td>
+                    <td><progress value="33" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="82" max="100"></progress></td>
+                    <td><progress value="68" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                Um sniper rifle semi-automático que vem pré-equipado com mira 4x.
+            </p>
+        </div>
+
+        <div class="bloco" tipo="rifle">
+            <h3>VSS</h3>
+            <img src="img/VSS.png" />
+            <br>
+            <table>
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="50" max="100"></progress></td>
+                    <td><progress value="48" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="84" max="100"></progress></td>
+                    <td><progress value="90" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                Um sniper rifle silencioso que funciona bem em tiros de médio alcance.
+            </p>
+        </div>
+
+
+        <div class="bloco" tipo="corpoacorpo">
+            <h3>GRANADA</h3>
+            <img src="img/Grenade.png" />
+            <br>
+            <table>
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="50" max="100"></progress></td>
+                    <td><progress value="48" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="84" max="100"></progress></td>
+                    <td><progress value="90" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                Elimine os inimigos da sua área com esta poderosa granada.
+            </p>
+        </div>
+
+        <div class="bloco" tipo="corpoacorpo">
+            <h3>BASTÃO</h3>
+            <img src="img/Bat.png" />
+            <br>
+            <table>
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="50" max="100"></progress></td>
+                    <td><progress value="48" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="84" max="100"></progress></td>
+                    <td><progress value="90" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                Um pouco mais longe do que a panela e tem uma chance menor de desviar balas devido à sua forma.
+            </p>
+        </div>
+
+        <div class="bloco" tipo="corpoacorpo">
+            <h3>KATANA</h3>
+            <img src="img/Katana.png" />
+            <br>
+            <table>
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="50" max="100"></progress></td>
+                    <td><progress value="48" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="84" max="100"></progress></td>
+                    <td><progress value="90" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                Katana - A arma favorita dos samurais.
+            </p>
+        </div>
+
+        <div class="bloco" tipo="corpoacorpo">
+            <h3>PANELA</h3>
+            <img src="img/Pan.png" />
+            <br>
+            <table>
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="50" max="100"></progress></td>
+                    <td><progress value="48" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="84" max="100"></progress></td>
+                    <td><progress value="90" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                O melhor escudo que protege o jogador de tudo o que seu inimigo pode lançar em você.
+            </p>
+        </div>
+
+        <div class="bloco" tipo="corpoacorpo">
+            <h3>MACHETE</h3>
+            <img src="img/Parang.png" />
+            <br>
+            <table>
+                <tr>
+                    <td><span>DANO</span></td>
+                    <td><span>TAXA DE DISPARO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="50" max="100"></progress></td>
+                    <td><progress value="48" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                    <td><span>ALCANCE</span></td>
+                    <td><span>PRECISÃO</span></td>
+                </tr>
+                <tr>
+                    <td><progress value="84" max="100"></progress></td>
+                    <td><progress value="90" max="100"></progress></td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <p>
+                A melhor espada que protege o jogador de tudo o que seu inimigo pode jogar em você. Supera a panela.
+            </p>
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>
